@@ -1,0 +1,91 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+:root{
+    --color-principal: green;
+}
+
+header{
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+nav{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0px;
+}
+.botton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    width: 25%;
+    background-color: var(--color-principal);
+}
+h2, h1{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+p{
+    line-height: 34px;
+    font-size: 24px;
+}
+.contenedor{
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.imagen{
+    margin-left: 20px;
+    padding: 20px;
+    height: 200px;
+    width: 30%;
+    background-image: url("recursos/tecnicas-estudio.jpg");
+    background-size: cover;
+}
+.contenido{ 
+    padding: 20px;
+    padding-left: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.imagen-estudio{
+  
+    background-image: url("recursos/tecnicas-estudio.jpg");
+    
+}
+
+.imagen-experiencia{
+
+    background-image: url("recursos/tecnicas-estudio.jpg");
+
+}
+
+.imagen-acerca{
+
+    background-image: url("recursos/tecnicas-estudio.jpg");
+
+}
