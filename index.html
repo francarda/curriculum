@@ -19,12 +19,12 @@
             
     </header>
     <nav>
-        <div class="botton">Estudios</div>
+        <div class="botton" onclick="ir('acerca')">Estudios</div>
         <div class="botton">Experiencia</div>
         <div class="botton">Acerca de mi</div>
-        <div class="botton">otro</div>
+        <div class="botton">Datos personales</div>
     </nav>
-    <div class="contenedor">
+    <div class="contenedor" id="estudio">
         <div class="imagen imagen-estudio"></div>
         <div class="contenido items-estudio">
             <h1>Estudios</h1>
@@ -36,7 +36,7 @@
             </ul>
         </div>
     </div>
-    <div class="contenedor">
+    <div class="contenedor" id="experiencia">
         <div class="imagen imagen-experiencia"></div>
         
         <div class="contenido contenido-experiencia">
@@ -54,7 +54,7 @@
             </p>
         </div>
     </div>
-    <div class="contenedor">
+    <div class="contenedor" id="acerca">
         <div class="imagen imagen-acerca"></div>
         <div class="contenido contenido-acerca">
 
@@ -72,11 +72,11 @@
             </p> 
         </div>
     </div>
-    <div class="contenedor">
+    <div class="contenedor" id="datos">
         <div class="imagen imagen-datos"></div>
         <div class="contenido contenido-datos">
             <h1>Datos personales</h1>
-            <ul>
+            <ul class="sin">
                 <li><strong>Dni:</strong>12.123.123</li>
                 <li><strong>Locaidad:</strong> Villa de Merlo(San Luis).</li>
                 <li><strong>Dirección:</strong> Las golondrinas 780.</li>
@@ -86,5 +86,13 @@
             </ul>
         </div>
     </div>
+    <script type="text/javascript">
+        
+        function ir(algo){
+            aux= document.getElementById(algo);
+            aux.focus();
+        }
+
+    </script>
 </body>
 </html>

@@ -51,6 +51,9 @@ li{
     line-height: 34px;
     
 }
+.sin{
+    list-style-type:none;
+}
 .contenedor{
     background-color: aliceblue;
     width: 100%;
