@@ -19,10 +19,11 @@
             
     </header>
     <nav>
-        <div class="botton" onclick="ir('acerca')">Estudios</div>
-        <div class="botton">Experiencia</div>
-        <div class="botton">Acerca de mi</div>
-        <div class="botton">Datos personales</div>
+        <div class="botton" name="estudio" onclick="ir('estudio')"> <label for="estudio">Estudios</label>
+        </div>
+        <div class="botton" name="experiencia" onclick="ir('experiencia')"><label for="experiencia">Experiencia</label></div>
+        <div class="botton" name="acerca" onclick="ir('acerca')"><label for="acerca">Acerca de mi</label></div>
+        <div class="botton" name="datos" onclick="ir('datos')"><label for="datos">Datos personales</label></div>
     </nav>
     <div class="contenedor" id="estudio">
         <div class="imagen imagen-estudio"></div>
@@ -90,7 +91,7 @@
         
         function ir(algo){
             aux= document.getElementById(algo);
-            aux.focus();
+            aux.scrollIntoView({block: "center", behavior: "smooth"});
         }
 
     </script>
