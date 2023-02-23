@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum Francisco</title>
+    
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -25,6 +26,8 @@
         <div class="botton" name="acerca" onclick="ir('acerca')"><label for="acerca">Acerca de mi</label></div>
         <div class="botton" name="datos" onclick="ir('datos')"><label for="datos">Datos personales</label></div>
     </nav>
+    
+    <div class="todo"></div>
     <div class="contenedor" id="estudio">
         <div class="imagen imagen-estudio"></div>
         <div class="contenido items-estudio">
@@ -38,7 +41,7 @@
         </div>
     </div>
     <div class="contenedor" id="experiencia">
-        <div class="imagen imagen-experiencia"></div>
+        <div class="imagen" id="imagen-experiencia"></div>
         
         <div class="contenido contenido-experiencia">
 
@@ -87,13 +90,10 @@
             </ul>
         </div>
     </div>
-    <script type="text/javascript">
+</div>
+   <script type="text/javascript" src="script.js">
         
-        function ir(algo){
-            aux= document.getElementById(algo);
-            aux.scrollIntoView({block: "center", behavior: "smooth"});
-        }
-
+    
     </script>
 </body>
 </html>

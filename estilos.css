@@ -1,24 +1,39 @@
-*{
+*{  
     margin:0px;
     padding: 0px;
 }
 :root{
     --color-principal: green;
 }
+body{
+    background-image: url("recursos/fondo verde.jpg");
+    background-size: cover;
+     
+     background: linear-gradient(90deg, #36b8f5, #fff,#fff);
+
+
+}
 
 header{
+    padding-top: 100px;;
     height: 300px;
-    background-color: blue;
+    /*background: linear-gradient(90deg, #7ed1f8, #030694,#7ed1f8, yellow);*/
+    background-image: url("recursos/sierras\ 2.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .foto{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: white;
+    background-image: url("recursos/bajo.jpg");
+    background-size: cover;
+    margin-bottom: 5px;
+    border: solid 2px black;
 }
 nav{
     height: 30px;
@@ -27,7 +42,8 @@ nav{
     align-items: center;
     justify-content: center;
     position: sticky;
-    top:0px;
+    top:0;
+    z-index: 100;
 }
 .botton{
     display: flex;
@@ -40,35 +56,43 @@ nav{
 }
 h2, h1{
     margin-top: 5px;
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 p{
-    line-height: 34px;
+  line-height: 34px;
     font-size: 24px;
 }
 li{
     font-size: 24px;
-    line-height: 34px;
+   line-height: 34px;
     
 }
 .sin{
     list-style-type:none;
 }
 .contenedor{
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 100px;
+     margin-top: 100px;
 }
 .imagen{
     margin-left: 20px;
     padding: 20px;
     height: 200px;
     width: 30%;
-    background-image: url("recursos/tecnicas-estudio.jpg");
+    /*background-image: url("recursos/tecnicas-estudio.jpg");*/
     background-size: cover;
+}
+#imagen-experiencia{
+   
+    background-size: cover;
+    background-image: url("recursos/carpinteria.jpg");
+    transition-property: backgroud-image;
+    transition-duration: 2s;
+    
 }
 .contenido{ 
     padding: 20px;
@@ -78,7 +102,11 @@ li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 0px;
+    box-shadow: 0 0 12px black;
+    background-color: white;
 }
 .imagen-estudio{
   
@@ -86,11 +114,11 @@ li{
     
 }
 
-.imagen-experiencia{
+/*.imagen-experiencia{
 
-    background-image: url("recursos/tecnicas-estudio.jpg");
+    background-image: url("recursos/ludmila.jpg");
 
-}
+}*/
 
 .imagen-acerca{
 
