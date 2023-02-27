@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
 *{  
     margin:0px;
     padding: 0px;
+
 }
 :root{
-    --color-principal: green;
+    --color-principal: black;
+    --color-secundario: white;
 }
 body{
-    background-image: url("recursos/fondo verde.jpg");
+    background-image: url("recursos/FONDO.png");
+    background-image: url("recursos/fondo verdoso.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Labrada', serif;
+
+
      
-     background: linear-gradient(90deg, #36b8f5, #fff,#fff);
+     /*background: linear-gradient(90deg, #36b8f5, #fff,#22ec0f);*/
 
 
 }
@@ -25,9 +37,21 @@ header{
     justify-content: center;
     align-items: center;
 }
+header h2{
+    color: var(--color-secundario);
+    text-shadow: 0 0 6px black;
+    margin:0px;
+}
+header h1{
+    color: var(--color-principal);
+    text-shadow: 0 0 6px white;
+    margin:0;
+
+  
+}
 .foto{
-    width: 150px;
-    height: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background-color: white;
     background-image: url("recursos/bajo.jpg");
@@ -44,6 +68,7 @@ nav{
     position: sticky;
     top:0;
     z-index: 100;
+    color: var(--color-secundario);
 }
 .botton{
     display: flex;
@@ -52,11 +77,20 @@ nav{
     height: 100%;
     text-align: center;
     width: 25%;
-    background-color: var(--color-principal);
+    background-color: rgba(22, 35, 214, 0.5);
+}
+.botton:hover{
+    transform: scale(1.8);
+    background-color: rgb(94, 104, 233);
+    font-family: 'Architects Daughter', "cursive";
+    transition: 0.3s;
 }
 h2, h1{
     margin-top: 5px;
    margin-bottom: 20px;
+   font-family:'Times New Roman', Times, serif;
+
+
 }
 p{
   line-height: 34px;
@@ -71,7 +105,7 @@ li{
     list-style-type:none;
 }
 .contenedor{
-    background-color: rgba(255, 255, 255, 0.5);
+   /* background-color: rgba(255, 255, 255, 0.5);*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -83,15 +117,29 @@ li{
     padding: 20px;
     height: 200px;
     width: 30%;
-    /*background-image: url("recursos/tecnicas-estudio.jpg");*/
     background-size: cover;
-}
-#imagen-experiencia{
-   
-    background-size: cover;
-    background-image: url("recursos/carpinteria.jpg");
-    transition-property: backgroud-image;
+    transition-property: all;
     transition-duration: 2s;
+}
+.imagen1{
+    margin-left: 20px;
+    padding: 50px;
+    height: auto;
+    width: 55%;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+.imagen1:hover{
+    transform: scale(1.1) translate(80px);
+ 
+}
+
+#imagen-experiencia{
+
+    width: 100%;
+
     
 }
 .contenido{ 
@@ -106,12 +154,40 @@ li{
     border-radius: 20px;
     margin: 0px;
     box-shadow: 0 0 12px black;
+    background-color: rgba(255 255 255 0.1);
+    transition: all 0.3s;
+}
+
+.contenido:hover{
+    transform: scale(1.1) translate(-80px);
     background-color: white;
+}
+.contenido-experiencia{
+    width: 45%;
 }
 .imagen-estudio{
   
     background-image: url("recursos/tecnicas-estudio.jpg");
     
+}
+.contenido-datos{
+    display: block;
+    background-color:rgba(255, 255, 255, 0.2);
+    border:none;
+    box-shadow: none;
+    text-shadow: 0 1px 8px black;
+    color: #120774;
+    text-align: right;
+    transition: all 0.3s;
+    font-family: 'Architects Daughter', "cursive" ;
+}
+.contenido-datos:hover{
+   transform:  scale(1.1) translate(0px);
+   background-color:rgba(255, 255, 255, 0.2);
+   text-align: center;
+   color: black;
+   text-shadow: none;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*.imagen-experiencia{
@@ -122,6 +198,8 @@ li{
 
 .imagen-acerca{
 
-    background-image: url("recursos/tecnicas-estudio.jpg");
+    background-image: url("recursos/bajo.jpg");
+    background-position: center;
+    border-radius: 20px;;
 
 }
